@@ -2,6 +2,9 @@
 
 ### Predictable state container for javascript applications.
 
+
+**Application state is something _totally_ different than component state!**
+
 Collection of all data to describe the app. App state container.
 
 React represents the views which translates the application data into something that can be displayed on the screen and user can interact with.
@@ -42,7 +45,7 @@ export function actionCreator(element) {
     
     return {
         type: TYPE_OF_ACTION,
-        payload: element 
+        payload: element <optional field>
     }
 }
 ```
