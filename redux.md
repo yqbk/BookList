@@ -18,7 +18,7 @@ Centralize all the application data into single object.
 
 1. import ```connect``` from react-redux. This is the glue between React and Redux. They are separate libraries. 
 2. ```connect``` takes a function and a component and produces a container. The container is a component that is aware of the state that is contained by Redux.
-3. ```mapStateToProps``` is a special key here. It takes **a state** as an argument and it returns **an object**. 
+3. ```mapStateToProps``` is a special key here. It takes **an application state** as an argument and it returns **an object**. 
 4. Object that is returned will be available to our component as ```this.props```.
 
 ### Reducer
@@ -28,7 +28,6 @@ Centralize all the application data into single object.
 
 
 ## Action and action creators
-
 1. User performs an action ie. click on 2nd book from the list
 2. _Action creator_ returns an action
 3. Action is automatically sent to all reducers
