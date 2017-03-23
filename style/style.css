@@ -1,0 +1,11 @@
+/*TODO*/
+.BookDetail {
+    float: right;
+    position: absolute;
+    left: 35%;
+    top: 0%;
+}
+
+.list-group col-sm-4 {
+    float: left;
+    width: 35%;
