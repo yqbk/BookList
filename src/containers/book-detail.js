@@ -6,8 +6,15 @@ import { connect } from 'react-redux'
 
 class BookDetail extends Component {
   render() {
+    if (!this.props.book) {
+      return <div>Select a book to get started.</div>
+    }
+
     return (
-      <div>BookDetail</div>
+      <div>
+        <h3>Details for:</h3>
+        <div>{this.prop.book.title}</div>
+      </div>
     )
   }
 
@@ -16,7 +23,7 @@ class BookDetail extends Component {
 
 function mapStateToProps(state) {
   return {
-    book: state.activeBook()
+    book: state.activeBook
   }
 }
 
